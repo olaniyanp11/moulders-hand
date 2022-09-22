@@ -67,7 +67,7 @@ html {
   color: black;
 }
 .schoolbtn {
-  font-family: "Permanent Marker";
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 30px;
   width: 500px;
@@ -92,6 +92,7 @@ html {
   height: 0px;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto", sans-serif;
   display: flex;
   opacity: 0;
   z-index: 1;
@@ -258,6 +259,7 @@ footer img {
   position: absolute;
   margin-left: 70%;
 }
+
 footer p {
   font-size: 30px;
   width: 50%;
@@ -283,18 +285,19 @@ footer p {
     overflow: visible;
   }
   #links.link2 .child3 {
-    margin-left: 24%;
+    margin-left: 21%;
     transition: 0.5s;
   }
   footer p {
     font-size: 18px;
   }
   #links.link2 .child2 {
-    margin-left: 24%;
+    margin-left: 21%;
     transition: 1s;
   }
+
   #links.link2 .child1 {
-    margin-left: 24%;
+    margin-left: 21%;
     transition: 1.5s;
   }
   .child3 {
@@ -311,6 +314,7 @@ footer p {
     transition: 1.5s;
     width: 300px;
   }
+
   .child1 {
     background-color: orangered;
     margin-left: 200%;
@@ -326,10 +330,12 @@ footer p {
   }
   .schoolbtn {
     width: 300px;
+    text-align: center;
     border: 2px solid;
   }
   .schoolbtn::after {
     width: 300px;
+    text-align: center;
     border: 2px solid;
   }
   .schoolbtn:hover:after {
