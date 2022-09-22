@@ -283,18 +283,18 @@ footer p {
     overflow: visible;
   }
   #links.link2 .child3 {
-    margin-left: 25%;
+    margin-left: 24%;
     transition: 0.5s;
   }
   footer p {
     font-size: 18px;
   }
   #links.link2 .child2 {
-    margin-left: 25%;
+    margin-left: 24%;
     transition: 1s;
   }
   #links.link2 .child1 {
-    margin-left: 25%;
+    margin-left: 24%;
     transition: 1.5s;
   }
   .child3 {
