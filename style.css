@@ -7,21 +7,19 @@
 html {
   scroll-behavior: smooth;
 }
-.con {
-  width: 5px;
-  position: absolute;
-  background-color: aqua;
-  border-radius: 12px;
-}
+
 #page1 {
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(61, 61, 61, 0.9), rgba(51, 51, 51, 0.4)),
     url("pp.jpg") no-repeat;
   background-size: cover;
-
+  overflow: hidden;
   z-index: -2;
 }
+/* .ffg {
+  overflow: hidden;
+} */
 .pg1nav {
   display: flex;
   width: 100%;
@@ -164,9 +162,9 @@ html {
   align-items: center;
   flex-wrap: wrap;
 }
-nav {
+/* nav {
   overflow: hidden;
-}
+} */
 /* pag2 2 about */
 #about {
   width: 100%;
@@ -278,20 +276,26 @@ footer p {
   #links {
     display: block;
     position: absolute;
-
-    margin-top: 70%;
+    overflow: hidden;
+    margin-top: 100%;
+  }
+  #links.link2 {
+    overflow: visible;
   }
   #links.link2 .child3 {
     margin-left: 25%;
+    transition: 0.5s;
   }
   footer p {
     font-size: 18px;
   }
   #links.link2 .child2 {
     margin-left: 25%;
+    transition: 1s;
   }
   #links.link2 .child1 {
     margin-left: 25%;
+    transition: 1.5s;
   }
   .child3 {
     transition: 1s;
@@ -310,8 +314,9 @@ footer p {
   .child1 {
     background-color: orangered;
     margin-left: 200%;
-    position: absolute;
+    position: relative;
     width: 300px;
+    transition: 2.2s;
     transition: 2.2s;
     margin-top: 18%;
   }
@@ -333,5 +338,24 @@ footer p {
   }
   #ba {
     display: flex;
+  }
+  /* body {
+    height: 250vh;
+    /* overflow: hidden; 
+    width: 100%;
+  } */
+  #our_facilities {
+    height: 50vh;
+  }
+  #about {
+    height: 100vh;
+  }
+}
+@media (max-width: 350px) {
+  #our_facilities {
+    height: 30vh;
+  }
+  #about {
+    height: 80vh;
   }
 }
