@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+.con {
+  width: 5px;
+  position: absolute;
+  background-color: aqua;
+  border-radius: 12px;
+}
+#page1 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(61, 61, 61, 0.9), rgba(51, 51, 51, 0.4)),
+    url("pp.jpg") no-repeat;
+  background-size: cover;
+
+  z-index: -2;
+}
+.pg1nav {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+}
+.pg1nav ul {
+  display: flex;
+  list-style-type: none;
+  color: black;
+  gap: 10%;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.pg1nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+.pg1nav ul li {
+  padding: 10px;
+  transition: 0.5s;
+  font-size: 20px;
+}
+.pg1nav ul li:hover,
+.child3 {
+  background-color: rgb(13, 88, 163);
+  color: white;
+}
+.pg1nav ul li:hover .navlink1 {
+  color: white;
+}
+#links li:hover .navlink {
+  color: white;
+}
+
+.mhs {
+  font-size: 30px;
+  color: rgb(13, 88, 163);
+}
+.mhs a {
+  color: black;
+}
+.schoolbtn {
+  font-family: "Permanent Marker";
+  color: white;
+  font-size: 30px;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  border-radius: 0px 15px 0px 15px;
+  border: 1px solid white;
+  padding: 5px;
+  z-index: 12;
+
+  background-color: transparent;
+}
+.schoolbtn::after {
+  width: 500px;
+  border-radius: 0px 15px 0px 15px;
+  background-color: white;
+  content: "chat with the management";
+  display: block;
+  transition: 1s;
+  height: 0px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity: 0;
+  z-index: 1;
+  color: black;
+  position: absolute;
+}
+.schoolbtn:hover:after {
+  height: 50px;
+  z-index: 1;
+  opacity: 1;
+  box-shadow: 0px 10px 10px 0px, 10px 0px 10px 0px;
+}
+.schoolbtn:hover {
+  color: black;
+}
+#ba {
+  width: 25px;
+  height: 5px;
+  background-color: rgb(13, 88, 163);
+  display: none;
+  margin-right: 20px;
+  justify-content: center;
+  transition: 0.5s;
+}
+#ba.bars2 {
+  transform: rotate(-270deg);
+}
+#ba.bars2::after {
+  width: 25px;
+  margin-top: 18px;
+}
+#ba.bars2::before {
+  width: 25px;
+  margin-top: 8px;
+}
+#ba::before {
+  width: 19px;
+  height: 5px;
+  position: absolute;
+  background-color: rgb(209, 141, 14);
+  display: flex;
+  margin-top: 7px;
+  content: "";
+  transition-delay: 0.9s;
+  transition: 0.5s;
+}
+#ba::after {
+  width: 16px;
+  height: 5px;
+  position: absolute;
+  background-color: orangered;
+  display: flex;
+  margin-top: 13px;
+  content: "";
+  transition-delay: 1.2s;
+  transition: 0.5s;
+}
+.sch {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  font-family: "Pacifico";
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav {
+  overflow: hidden;
+}
+/* pag2 2 about */
+#about {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+}
+
+.img2 img {
+  width: 100%;
+}
+.content2 {
+  flex-basis: 80%;
+
+  text-align: center;
+}
+
+.content2 h2 {
+  font-size: 30px;
+  font-family: "Montagu Slab", serif;
+  color: rgb(13, 88, 163);
+  font-weight: bold;
+}
+.content2 p {
+  font-size: 20px;
+  font-family: "Montagu Slab", serif;
+  font-weight: bold;
+  word-spacing: 1px;
+}
+.contact {
+  font-family: "Pacifico";
+
+  width: 200px;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: orangered;
+  color: white;
+  border-radius: 20px;
+}
+.contact:active {
+  background-color: rgb(251, 109, 57);
+}
+.cont {
+  display: flex;
+  justify-content: center;
+}
+#about {
+  padding: 2%;
+}
+/* our facilities page3 */
+#our_facilities {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+}
+#our_facilities h2 {
+  font-size: 30px;
+  font-family: "Montagu Slab", serif;
+  color: rgb(13, 88, 163);
+  font-weight: bold;
+}
+#our_facilities p {
+  font-size: 20px;
+  font-family: "Montagu Slab", serif;
+  font-weight: bold;
+  word-spacing: 1px;
+}
+.content3 {
+  flex-basis: 80%;
+
+  text-align: center;
+}
+footer {
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 0%;
+  background-color: rgb(13, 88, 163);
+  color: white;
+}
+footer img {
+  width: 25%;
+  margin-top: -17%;
+  position: absolute;
+  margin-left: 70%;
+}
+footer p {
+  font-size: 30px;
+  width: 50%;
+  font-family: "Montagu Slab", serif;
+}
+@media (max-width: 750px) {
+  .content {
+    font-size: 70px;
+  }
+  #about {
+    display: block;
+    height: 120vh;
+  }
+}
+@media (max-width: 500px) {
+  #links {
+    display: block;
+    position: absolute;
+
+    margin-top: 70%;
+  }
+  #links.link2 .child3 {
+    margin-left: 25%;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  #links.link2 .child2 {
+    margin-left: 25%;
+  }
+  #links.link2 .child1 {
+    margin-left: 25%;
+  }
+  .child3 {
+    transition: 1s;
+    position: absolute;
+    width: 300px;
+    margin-top: -18%;
+    margin-left: 200%;
+  }
+  .child2 {
+    background-color: rgb(209, 141, 14);
+    position: absolute;
+    margin-left: 200%;
+    transition: 1.5s;
+    width: 300px;
+  }
+  .child1 {
+    background-color: orangered;
+    margin-left: 200%;
+    position: absolute;
+    width: 300px;
+    transition: 2.2s;
+    margin-top: 18%;
+  }
+  .pg1nav ul li {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .schoolbtn {
+    width: 300px;
+    border: 2px solid;
+  }
+  .schoolbtn::after {
+    width: 300px;
+    border: 2px solid;
+  }
+  .schoolbtn:hover:after {
+    height: 100px;
+    border: 2px solid;
+  }
+  #ba {
+    display: flex;
+  }
+}
